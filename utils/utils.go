@@ -50,3 +50,7 @@ func GetUint64(prompt string) uint64 {
 		return uint64(number)
 	}
 }
+
+func IsAsciiLetter(ch rune) bool {
+	return (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')
+}
